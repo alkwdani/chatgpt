@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ChatGPT Web with SQLite History</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2em; }
+    #response { margin-top: 1em; white-space: pre-wrap; background: #f5f5f5; padding: 1em; border-radius: 8px; }
+    .message { margin-bottom: 1em; }
+    .user { font-weight: bold; }
+    .assistant { color: darkblue; }
+  </style>
+</head>
+<body>
+  <h1>Ask ChatGPT</h1>
+  <textarea id="prompt" rows="4" cols="50" placeholder="Type your question..."></textarea><br>
+  <button onclick="askChatGPT()">Send</button>
+  <button onclick="clearHistory()">Clear History</button>
+  <div id="response"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
